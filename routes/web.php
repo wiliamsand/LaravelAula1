@@ -11,14 +11,23 @@
 |
 */
 
-Route::get('/olamundo', function(){
-	return "Hello World!";
-});
-
-Route::get('/olapessoa/{name}', function($name='Estranho'){
-	return "Hello " . $name;
-});
-
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/boletim', 'BoletimController@index');
+
+Route::group(['middleware' => 'auth'], function(){
+	Route::get('/boletim/create', 'BoletimController@create');
+	Route::post('/boletim', 'BoletimController@store');
+	Route::get('/boletim/{id}', 'BoletimController@show');
+	Route::get('/boletim/{id}/edit', 'BoletimController@edit');
+	Route::put('/boletim/{id}', 'BoletimController@update');
+	Route::get('/boletim/{id}/delete', 'BoletimController@delete');
+	Route::delete('/boletim/{id}', 'BoletimController@destroy');
+});
+
+

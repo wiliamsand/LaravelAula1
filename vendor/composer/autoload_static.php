@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
+class ComposerStaticInitf8ecaf2fdd488ef16f857140df2bf079
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -320,13 +320,16 @@ class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
     );
 
     public static $classMap = array (
+        'App\\Boletim' => __DIR__ . '/../..' . '/app/Boletim.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\BoletimController' => __DIR__ . '/../..' . '/app/Http/Controllers/BoletimController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -1398,6 +1401,7 @@ class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
         'Illuminate\\Foundation\\Testing\\WithoutEvents' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Testing/WithoutEvents.php',
         'Illuminate\\Foundation\\Testing\\WithoutMiddleware' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Testing/WithoutMiddleware.php',
         'Illuminate\\Foundation\\Validation\\ValidatesRequests' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php',
+        'Illuminate\\Hashing\\AbstractHasher' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Hashing/AbstractHasher.php',
         'Illuminate\\Hashing\\ArgonHasher' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Hashing/ArgonHasher.php',
         'Illuminate\\Hashing\\BcryptHasher' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Hashing/BcryptHasher.php',
         'Illuminate\\Hashing\\HashManager' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Hashing/HashManager.php',
@@ -2778,6 +2782,7 @@ class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
         'Psy\\Command\\SudoCommand' => __DIR__ . '/..' . '/psy/psysh/src/Command/SudoCommand.php',
         'Psy\\Command\\ThrowUpCommand' => __DIR__ . '/..' . '/psy/psysh/src/Command/ThrowUpCommand.php',
         'Psy\\Command\\TimeitCommand' => __DIR__ . '/..' . '/psy/psysh/src/Command/TimeitCommand.php',
+        'Psy\\Command\\TimeitCommand\\TimeitVisitor' => __DIR__ . '/..' . '/psy/psysh/src/Command/TimeitCommand/TimeitVisitor.php',
         'Psy\\Command\\TraceCommand' => __DIR__ . '/..' . '/psy/psysh/src/Command/TraceCommand.php',
         'Psy\\Command\\WhereamiCommand' => __DIR__ . '/..' . '/psy/psysh/src/Command/WhereamiCommand.php',
         'Psy\\Command\\WtfCommand' => __DIR__ . '/..' . '/psy/psysh/src/Command/WtfCommand.php',
@@ -3567,6 +3572,7 @@ class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
         'Symfony\\Component\\VarDumper\\Dumper\\HtmlDumper' => __DIR__ . '/..' . '/symfony/var-dumper/Dumper/HtmlDumper.php',
         'Symfony\\Component\\VarDumper\\Dumper\\ServerDumper' => __DIR__ . '/..' . '/symfony/var-dumper/Dumper/ServerDumper.php',
         'Symfony\\Component\\VarDumper\\Exception\\ThrowingCasterException' => __DIR__ . '/..' . '/symfony/var-dumper/Exception/ThrowingCasterException.php',
+        'Symfony\\Component\\VarDumper\\Server\\Connection' => __DIR__ . '/..' . '/symfony/var-dumper/Server/Connection.php',
         'Symfony\\Component\\VarDumper\\Server\\DumpServer' => __DIR__ . '/..' . '/symfony/var-dumper/Server/DumpServer.php',
         'Symfony\\Component\\VarDumper\\Test\\VarDumperTestTrait' => __DIR__ . '/..' . '/symfony/var-dumper/Test/VarDumperTestTrait.php',
         'Symfony\\Component\\VarDumper\\VarDumper' => __DIR__ . '/..' . '/symfony/var-dumper/VarDumper.php',
@@ -3612,6 +3618,7 @@ class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'boletimTableSeeder' => __DIR__ . '/../..' . '/database/seeds/boletimTableSeeder.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -3685,10 +3692,10 @@ class ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit66a3ff134dc36eb896668f80e7c0f021::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf8ecaf2fdd488ef16f857140df2bf079::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf8ecaf2fdd488ef16f857140df2bf079::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf8ecaf2fdd488ef16f857140df2bf079::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf8ecaf2fdd488ef16f857140df2bf079::$classMap;
 
         }, null, ClassLoader::class);
     }
